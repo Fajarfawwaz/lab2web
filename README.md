@@ -11,6 +11,7 @@ Pada tugas ini dilakukan eksperimen dengan mengubah dan menambah properti CSS be
 Contoh sederhana:
 
 css
+```
 h1 {
   color: blue;
   font-size: 32px;
@@ -22,8 +23,7 @@ p {
   line-height: 1.5;
 }
 
-
----
+```
 
 ## 2. Perbedaan h1 {...} dengan #intro h1 {...}
 
@@ -36,27 +36,26 @@ p {
 *Contoh:*
 
 html
-<h1>Judul Umum</h1>
+```<h1>Judul Umum</h1>
 <div id="intro">
   <h1>Judul di Intro</h1>
 </div>
-
+```
 
 css
-h1 {
+```h1 {
   color: blue;
 }
 #intro h1 {
   color: red;
 }
 
-
+```
 *Hasil:*
 
 * "Judul Umum" → biru
 * "Judul di Intro" → merah
 
----
 
 ## 3. Urutan Prioritas CSS (Inline, Internal, External)
 
