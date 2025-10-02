@@ -42,7 +42,7 @@ html
 </div>
 ```
 
-css
+
 ```h1 {
   color: blue;
 }
@@ -68,6 +68,7 @@ Aturan prioritas CSS:
 
 *Contoh:*
 
+```
 html
 <head>
   <link rel="stylesheet" href="style.css"> <!-- External -->
@@ -78,12 +79,12 @@ html
 <body>
   <p style="color: red;">Teks ini berwarna merah</p> <!-- Inline -->
 </body>
-
+```
 
 *Hasil:*
 Teks akan berwarna *merah* karena inline lebih kuat.
 
----
+
 
 ## 4. Elemen dengan ID dan Class
 
