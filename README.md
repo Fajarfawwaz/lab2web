@@ -1,7 +1,7 @@
 MATKUL:PEMOGRAMAN WEB1
-NAMA: Fajar Fawwaz Atallah
+NAMA:GILANG 
 KELAS:TI.24.A.4
-NIM:312410357
+NIM:312410363
 
 # Tugas CSS - README
 
@@ -10,8 +10,7 @@ NIM:312410357
 Pada tugas ini dilakukan eksperimen dengan mengubah dan menambah properti CSS berdasarkan CSS Cheat Sheet.
 Contoh sederhana:
 
-css
-```
+```css
 h1 {
   color: blue;
   font-size: 32px;
@@ -22,54 +21,55 @@ p {
   color: gray;
   line-height: 1.5;
 }
-
 ```
 
-## 2. Perbedaan h1 {...} dengan #intro h1 {...}
+---
 
-* **h1 {...}**
-  Selektor ini berlaku untuk semua elemen <h1> di halaman HTML.
+## 2. Perbedaan `h1 {...}` dengan `#intro h1 {...}`
 
-* **#intro h1 {...}**
-  Selektor ini hanya berlaku pada <h1> yang berada **di dalam elemen dengan id intro**.
+* **`h1 {...}`**
+  Selektor ini berlaku untuk semua elemen `<h1>` di halaman HTML.
 
-*Contoh:*
+* **`#intro h1 {...}`**
+  Selektor ini hanya berlaku pada `<h1>` yang berada **di dalam elemen dengan id `intro`**.
 
-html
-```<h1>Judul Umum</h1>
+**Contoh:**
+
+```html
+<h1>Judul Umum</h1>
 <div id="intro">
   <h1>Judul di Intro</h1>
 </div>
 ```
 
-
-```h1 {
+```css
+h1 {
   color: blue;
 }
 #intro h1 {
   color: red;
 }
-
 ```
-*Hasil:*
+
+**Hasil:**
 
 * "Judul Umum" → biru
 * "Judul di Intro" → merah
 
+---
 
 ## 3. Urutan Prioritas CSS (Inline, Internal, External)
 
 Aturan prioritas CSS:
 
-1. *Inline CSS* (style langsung pada elemen) → paling tinggi
-2. *Internal CSS* (di <style>...</style> dalam <head>)
-3. *External CSS* (file .css yang dilink)
-4. *Default browser*
+1. **Inline CSS** (style langsung pada elemen) → paling tinggi
+2. **Internal CSS** (di `<style>...</style>` dalam `<head>`)
+3. **External CSS** (file `.css` yang dilink)
+4. **Default browser**
 
-*Contoh:*
+**Contoh:**
 
-```
-html
+```html
 <head>
   <link rel="stylesheet" href="style.css"> <!-- External -->
   <style>
@@ -81,42 +81,43 @@ html
 </body>
 ```
 
-*Hasil:*
-Teks akan berwarna *merah* karena inline lebih kuat.
+**Hasil:**
+Teks akan berwarna **merah** karena inline lebih kuat.
 
-
+---
 
 ## 4. Elemen dengan ID dan Class
 
-Jika sebuah elemen memiliki *ID* dan *Class*, maka prioritas adalah:
+Jika sebuah elemen memiliki **ID** dan **Class**, maka prioritas adalah:
 
-* Inline > *ID* > Class > Element
+* Inline > **ID** > Class > Element
 
-*Contoh:*
+**Contoh:**
 
-html
+```html
 <p id="paragraf-1" class="text-paragraf">Contoh teks</p>
+```
 
-
-css
+```css
 .text-paragraf {
   color: blue;
 }
 #paragraf-1 {
   color: red;
 }
+```
 
-
-*Hasil:*
-Teks akan berwarna *merah, karena **ID lebih kuat daripada Class*.
+**Hasil:**
+Teks akan berwarna **merah**, karena **ID lebih kuat daripada Class**.
 
 ---
 
 ## Kesimpulan
 
-* h1 bersifat global, sedangkan #intro h1 lebih spesifik.
+* `h1` bersifat global, sedangkan `#intro h1` lebih spesifik.
 * Inline CSS memiliki prioritas paling tinggi dibanding internal dan eksternal.
-* Selector ID (#id) lebih kuat dibanding Class (.class).
-* Urutan prioritas CSS: *Inline > ID > Class > Elemen*.
+* Selector ID (`#id`) lebih kuat dibanding Class (`.class`).
+* Urutan prioritas CSS: **Inline > ID > Class > Elemen**.
 
 ---
+
